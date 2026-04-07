@@ -6,10 +6,8 @@ Lock XLM into a time-bound savings vault on the Stellar blockchain. Set a goal n
 
 | | |
 |---|---|
-| **Frontend** | `https://goalsave.vercel.app` |
-| **GitHub** | `https://github.com/YOUR_USERNAME/goalsave` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CONTRACT_ID` |
-| **Proof TX** | `https://stellar.expert/explorer/testnet/tx/TX_HASH` |
+| *Frontend* | https://goalsave.vercel.app |
+| *Contract* | https://stellar.expert/explorer/testnet/contract/CDB4RSZESNU6FA6BEVRD6FHFBE2EJ3IZCELMIB7WT72AJFDN2EKWS423 |
 
 ## How It Works
 
