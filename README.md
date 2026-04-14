@@ -6,8 +6,8 @@ Lock XLM into a time-bound savings vault on the Stellar blockchain. Set a goal n
 
 | | |
 |---|---|
-| *Frontend* | https://goalsave.vercel.app |
-| *Contract* | https://stellar.expert/explorer/testnet/contract/CDB4RSZESNU6FA6BEVRD6FHFBE2EJ3IZCELMIB7WT72AJFDN2EKWS423 |
+| **Frontend** | `https://goalsave.vercel.app` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CBDVL232NZ4O6ALGVCN5W5MMN42ULZ4ZCA6HY4HUX4N7ZKJ4U7ANBSR3` |
 
 ## How It Works
 
@@ -16,6 +16,16 @@ Lock XLM into a time-bound savings vault on the Stellar blockchain. Set a goal n
 3. **Wait** until the unlock ledger passes
 4. **Withdraw** the full amount — or break early and lose 10%
 
+## Why This Project Matters
+
+This project turns a familiar real-world workflow into a verifiable on-chain primitive on Stellar: transparent state transitions, user-authenticated actions, and deterministic outcomes.
+
+## Architecture
+
+- **Smart Contract Layer**: Soroban contract enforces business rules, authorization, and state transitions.
+- **Client Layer**: React + Vite frontend handles wallet UX, transaction composition, and real-time status views.
+- **Wallet/Auth Layer**: Freighter signs every state-changing action so operations are attributable and non-repudiable.
+- **Infra Layer**: Stellar Testnet + Soroban RPC for execution; Vercel for frontend hosting.
 ## Contract Functions
 
 ```rust
@@ -43,3 +53,6 @@ get_owner_vaults(owner) -> Vec<u64>
 chmod +x scripts/deploy.sh && ./scripts/deploy.sh
 cd frontend && npm install && npm run dev
 ```
+
+
+
